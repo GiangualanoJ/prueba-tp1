@@ -41,7 +41,7 @@ const Producto = dbConnection.define('productos', {
 });
 
 Producto.sync({ alter: true }).then(() => {
-    console.log("Table Producto sync successfully1");
+    console.log("Table Producto sync successfully");
 }).catch((error) => {
     console.log("Hubo un error", error);
 });
