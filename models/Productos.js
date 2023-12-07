@@ -40,10 +40,10 @@ const Producto = dbConnection.define('productos', {
     timestamps: false
 });
 
-// Producto.sync({ alter: true }).then(() => {
-//     console.log("Table Producto sync successfully");
-// }).catch((error) => {
-//     console.log("Hubo un error", error);
-// });
+Producto.sync({ alter: true }).then(() => {
+    console.log("Table Producto sync successfully");
+}).catch((error) => {
+    console.log("Hubo un error", error);
+});
 
-module.exports =  Producto;
+module.exports = Producto;
