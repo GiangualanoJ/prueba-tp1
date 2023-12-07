@@ -1,7 +1,7 @@
 const { dbConnection } = require('../config/database');
 const { DataTypes } = require('sequelize');
 
-const Producto = dbConnection.define('Productos', {
+const Producto = dbConnection.define('productos', {
     nombre: {
         type: DataTypes.STRING
     },
