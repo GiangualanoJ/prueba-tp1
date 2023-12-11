@@ -19,18 +19,17 @@ const Proveedores = dbConnection.define('Proveedores', {
     timestamps: false
 })
 
+ Proveedores.hasMany(Producto, {
+    foreignKey: 'proveedorID',
+    as: 'Productos'
+ }); 
 
-// Proveedores.hasMany(Producto, {
-//     foreignKey: 'proveedorID',
-//     as: 'Productos'
-// }); 
 
-
-// Proveedores.sync({ alter: true }).then(() => {
-//     console.log("Table Proveedores sync successfully");
-// }).catch((error) => {
-//     console.log("hubo un error", error);
-// })
+Proveedores.sync({ alter: true }).then(() => {
+    console.log("Table Proveedores sync successfully");
+}).catch((error) => {
+    console.log("hubo un error", error);
+})
 
 
 

@@ -28,6 +28,6 @@ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.DATABASE_PORT, () => {
     console.log(`Servidor corriendo en puerto ${process.env.DATABASE_PORT}`);
 });
