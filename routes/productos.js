@@ -4,7 +4,7 @@ const multer = require('multer')
 const path = require('path')
 const fs = require('fs')
 const { getProducto, createProducto, updateProducto, deleteProducto } = require('../controllers/productControllers')
-/* Importa los controladores */
+/* Importa los controladores modificacion */
 
 
 const diskstorage = multer.diskStorage({
